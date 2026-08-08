@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ORION</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="bootstrap/bootstrap-5.3.8-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="orion.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar  navbar-expand-lg ">
+                <div class="container">
+                    <button class="navbar-brand col-3 d-flex align-items-center "
+                        onclick="window.location.href='index.html'">
+                        <div class="d-flex col-4 gap-1">
+                            <div><img src="images/orion-logo.jpg" alt=""
+                                    style=" width:40px; height: 50px; border-radius: 45%;"></div>
+                            <div class="d-flex align-items-center">
+                                <h4>ORION</h4>
+                            </div>
+                        </div>
+                    </button>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"> ORION</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body d-flex flex-column flex-md-row justify-content-between">
+                            <ul class="navbar-nav justify-content-md-center align-items-md-center flex-grow-1 pe-3 gap-3">
+                                <li class="nav-item">
+                                    <button class="d-flex align-items-center gap-3 nav-btn " aria-current="page"
+                                        onclick="window.location.href = 'index.html';">
+                                        <div class="btn-icon"><i><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-radio-icon lucide-radio">
+                                                    <path d="M16.247 7.761a6 6 0 0 1 0 8.478" />
+                                                    <path d="M19.075 4.933a10 10 0 0 1 0 14.134" />
+                                                    <path d="M4.925 19.067a10 10 0 0 1 0-14.134" />
+                                                    <path d="M7.753 16.239a6 6 0 0 1 0-8.478" />
+                                                    <circle cx="12" cy="12" r="2" />
+                                                </svg></i></div>
+                                        EXPLORE
+                                    </button>
+                                </li>
+                                <li class="nav-item">
+                                    <button class="d-flex align-items-center gap-3 nav-btn active "
+                                        onclick="window.location.href = 'solar-system.html';">
+                                        <div class="btn-icon"> <i><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-globe-icon lucide-globe">
+                                                    <circle cx="12" cy="12" r="10" />
+                                                    <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+                                                    <path d="M2 12h20" />
+                                                </svg></i></div>
+                                        SOLAR SYSTEM
+                                    </button>
+                                </li>
+                                <li class=" nav-item">
+                                    <button class=" d-flex align-items-center gap-3 nav-btn "
+                                        onclick="window.location.href = 'galaxy.html';">
+                                        <div class="btn-icon"><i><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-orbit-icon lucide-orbit">
+                                                    <path d="M20.341 6.484A10 10 0 0 1 10.266 21.85" />
+                                                    <path d="M3.659 17.516A10 10 0 0 1 13.74 2.152" />
+                                                    <circle cx="12" cy="12" r="3" />
+                                                    <circle cx="19" cy="5" r="2" />
+                                                    <circle cx="5" cy="19" r="2" />
+                                                </svg></i></div>
+                                        GLAXIES
+                                    </button>
+                                </li>
+                                <li class=" nav-item">
+                                    <button class="d-flex align-items-center gap-3 nav-btn "
+                                        onclick="window.location.href = 'mystery.html';">
+                                        <div class="btn-icon"><i><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-sparkles-icon lucide-sparkles">
+                                                    <path
+                                                        d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z" />
+                                                    <path d="M20 2v4" />
+                                                    <path d="M22 4h-4" />
+                                                    <circle cx="4" cy="20" r="2" />
+                                                </svg></i></div>
+                                        MYSTRIES
+                                    </button>
+                                </li>
+                                <li class=" nav-item">
+                                    <button class="d-flex align-items-center gap-3 nav-btn "
+                                        onclick="window.location.href = 'mission.html';">
+                                        <div class="btn-icon"><i><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-rocket-icon lucide-rocket">
+                                                    <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" />
+                                                    <path
+                                                        d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09" />
+                                                    <path
+                                                        d="M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2z" />
+                                                    <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 .05 5 .05" />
+                                                </svg></i></div>
+                                        MISSIONS
+                                    </button>
+                                </li>
+                                <li class=" nav-item">
+                                    <button class="d-flex align-items-center gap-3  nav-btn "
+                                        onclick="window.location.href = 'gallery.html';">
+                                        <div class="btn-icon"><i><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-image-icon lucide-image">
+                                                    <rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
+                                                    <circle cx="9" cy="9" r="2" />
+                                                    <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" />
+                                                </svg></i></div>
+                                        GALLERY
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero-planet">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-md-flex align-items-center justify-content-between">
+                        <div>
+                            <button onclick="window.location.href = 'solar-system.html';">
+                                <i><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-arrow-left-icon lucide-arrow-left">
+                                    <path d="m12 19-7-7 7-7" />
+                                    <path d="M19 12H5" />
+                                </svg></i> RETURN TO SOLAR SYSTEM
+                            </button>
+                        </div>
+                        <div>
+                            <ul class="p-list list-unstyled d-flex  flex-wrap justify-content-between">
+                                <li><button class="active" onclick="window.location.href = 'mercury.html';">Mercury</button></li>
+                                <li><button onclick="window.location.href = 'venus.html';">venus</button></li>
+                                <li><button onclick="window.location.href = 'earth.html';">earth</button></li>
+                                <li><button onclick="window.location.href = 'mars.html';">mars</button></li>
+                                <li><button onclick="window.location.href = 'jupiter.html';">jupiter</button></li>
+                                <li><button onclick="window.location.href = 'saturn.html';">saturn</button></li>
+                                <li><button onclick="window.location.href = 'uranus.html';">uranus</button></li>
+                                <li><button onclick="window.location.href = 'neptune.html';">neptune</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="s-planet INNER" style="margin-top:50px ;">
+            <div class="container">
+                <div class="row">
+                    <a href="mercury.html">
+                        <div class="planet d-md-flex gap-5">
+                            <div class="left-side col-md-4 order-md-2 ">
+                                <div class="image"><img src="images/img8.jpg" alt=""></div>
+                            </div>
+                            <div class="right-side col-md-7 text-start">
+                                <div class="d-flex gap-3">
+                                    <div class="p-tag col-5 col-md-2">
+                                        <p>001 // SOL_I</p>
+                                    </div>
+                                    <h6>PLANETARY BODY #01</h6>
+                                </div>
+                                <div>
+                                    <h2>MERCURY</h2>
+                                </div>
+                                <div class="p-para">
+                                    <p>Mercury is the smallest planet in the Solar System and the closest to the Sun. Its orbit has the highest eccentricity of all Solar System planets and it has the smallest axial tilt. Its surface is heavily cratered and similar in appearance to the Moon.</p>
+                                </div>
+                                <div class="p-info d-flex gap-3  flex-wrap flex-md-nowrap justify-content-center">
+                                    <div class="col-5 col-md-3">
+                                        <p>DISTANCE (SUN)</p>
+                                        <span style="color: var(--text-primary); ">57.9 M km</span>
+                                    </div>
+                                    <div class="col-5 col-md-3">
+                                        <p>DIAMETER</p>
+                                        <span style="color: var(--text-primary);">4,879 km</span>
+                                    </div>
+                                    <div class="col-5 col-md-3">
+                                        <p>AVG TEMP</p>
+                                        <span style="color: var(--primary);" class="d-flex align-items-center"><i><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-thermometer-icon lucide-thermometer">
+                                                    <path d="M14 4v10.54a4 4 0 1 1-4 0V4a2 2 0 0 1 4 0Z" />
+                                                </svg></i> 167°C</span>
+                                    </div>
+                                    <div class="col-5 col-md-3">
+                                        <p>SATELLITES</p>
+                                        <span style="color: var(--text-primary);">00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="p-overview" style="margin-top:50px ;">
+            <div class="container">
+                <div class="row">
+                    <div class="d-flex gap-2" style="    border-bottom:1px solid var(--border-glass) ; padding-bottom: 30px;">
+                        <button id="PRIMARYOVERVIEW-btn" class="active">PRIMARY OVERVIEW</button>
+                        <button id="SYSTEMTELEMETRY-btn">SYSTEM TELEMETRY</button>
+                    </div>
+                    <div id="PRIMARYOVERVIEW" class="d-md-flex gap-5">
+                        <div class="system-status col-md-5">
+                            <div class="d-flex justify-content-between " style="border-bottom:1px solid var(--border-glass) ; padding-bottom: 10px;">
+                                <span style="color: var(--primary);">SYSTEM STATUS DIAGNOSTICS</span>
+                                <span style="color: var(--accent-green);"><i><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-circle-check-icon lucide-circle-check">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <path d="m9 12 2 2 4-4" />
+                                </svg></i> ALL SENSORS NOMINAL</span>
+                            </div>
+                            <div >
+                                <div class="po-info d-flex gap-3  justify-content-between align-items-center">
+                                    <p>ATMOSPHERE</p>
+                                    <span>EXOSPHERE_TRACE</span>
+                                </div>
+                                <div class="po-info d-flex gap-3  justify-content-between align-items-center">
+                                    <p>MAGNETOSPHERE</p>
+                                    <span>WEAK_GLOBAL</span>
+                                </div>
+                                <div class="po-info d-flex gap-3  justify-content-between align-items-center">
+                                    <p>SURFACE_STATE</p>
+                                    <span>SILICATE_CRUST</span>
+                                </div>
+                                <div class="po-info d-flex gap-3  justify-content-between align-items-center">
+                                    <p>SOLAR_IRRADIANCE</p>
+                                    <span>6.5X_TERRESTRIAL</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                        <div class="system-status ">
+                            <div class="d-flex justify-content-between "
+                                style="border-bottom:1px solid var(--border-glass) ; padding-bottom: 20px; margin-bottom: 20px;">
+                                <span style="color: var(--accent-amber);">EXPLORATION MILESTONES & LOGS</span>
+                            </div>
+                                <div class=" d-flex gap-3  justify-content-between align-items-center">
+                                    <p style="color: var(--text-muted);">Sub-light probe data archived.</p>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div id="SYSTEMTELEMETRY" class="system-telemetry">
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <h4>REAL-TIME SPECTRAL ANALYSIS</h4>
+                            <span style="color: var(--primary);">BANDWIDTH: 100 Gbps // SUB-LIGHT STREAM</span>
+                        </div>
+                        <div>
+                            <i style="color: var(--primary); font-size: 30px;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-activity-icon lucide-activity">
+                                <path
+                                    d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2" />
+                            </svg></i>
+                        </div>
+                    </div>
+                    <div class="d-md-flex gap-3">
+                        <div class="div5 col-md-4">
+                            <p>GRAVITATIONAL ACCELERATION</p>
+                            <h4>9.807 m/s²</h4>
+                            <div class="line1"></div>
+                        </div>
+                        <div class="div5 col-md-4">
+                            <p>ORBITAL VELOCITY</p>
+                            <h4>29.78 km/s</h4>
+                            <div class="line2"></div>
+                        </div>
+                        <div class="div5 col-md-4">
+                            <p>ATMOSPHERIC DENSITY</p>
+                            <h4>1.217 kg/m³</h4>
+                            <div class="line3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer style="margin-top: 30px;">
+            <div class="container">
+                <div class="row">
+                    <div class="d-md-flex">
+                        <div class="col-md-4">
+                            <button onclick="window.location.href = 'index.html';">
+                                <div class="d-flex align-items-center gap-2">
+                                    <div class="image"><img src="images/orion-logo.jpg" alt=""></div>
+                                    <div class="d-flex flex-column align-items-center justify-content-start text-start">
+                                        <h4>ORION <span>AEROSPACE OBSERVATORY</span></h4>
+                                    </div>
+                                </div>
+                            </button>
+                            <div class="f-para  col-md-10">
+                                <p>Charting deep space telemetry, planetary cartography, and cosmic mysteries for
+                                    next-generation astronomical observation.</p>
+                            </div>
+                            <div class="f-tag col-6 col-md-8">
+                                <p><i><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" class="lucide lucide-radio-icon lucide-radio">
+                                            <path d="M16.247 7.761a6 6 0 0 1 0 8.478" />
+                                            <path d="M19.075 4.933a10 10 0 0 1 0 14.134" />
+                                            <path d="M4.925 19.067a10 10 0 0 1 0-14.134" />
+                                            <path d="M7.753 16.239a6 6 0 0 1 0-8.478" />
+                                            <circle cx="12" cy="12" r="2" />
+                                        </svg></i> ORBITAL UPLINK: STABLE</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-md-flex flex-column align-items-center justify-content-start">
+                            <ul class="f-list list-unstyled">
+                                <h6>sectors</h6>
+                                <li><button onclick="window.location.href = 'solar-system.html';"><i
+                                            style="color: var(--secondary);"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-globe-icon lucide-globe">
+                                                <circle cx="12" cy="12" r="10" />
+                                                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+                                                <path d="M2 12h20" />
+                                            </svg></i> SOLAR SYSTEM</button></li>
+                                <li><button onclick="window.location.href = 'galaxy.html';"><i
+                                            style="color: var(--primary);"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-sparkles-icon lucide-sparkles">
+                                                <path
+                                                    d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z" />
+                                                <path d="M20 2v4" />
+                                                <path d="M22 4h-4" />
+                                                <circle cx="4" cy="20" r="2" />
+                                            </svg></i> GALAXIES & NEBULAE</button></li>
+                                <li><button onclick="window.location.href = 'mystery.html';"><i
+                                            style="color: var(--accent-purple);"><svg xmlns="http://www.w3.org/2000/svg"
+                                                width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-radio-icon lucide-radio">
+                                                <path d="M16.247 7.761a6 6 0 0 1 0 8.478" />
+                                                <path d="M19.075 4.933a10 10 0 0 1 0 14.134" />
+                                                <path d="M4.925 19.067a10 10 0 0 1 0-14.134" />
+                                                <path d="M7.753 16.239a6 6 0 0 1 0-8.478" />
+                                                <circle cx="12" cy="12" r="2" />
+                                            </svg></i> DEEP SPACE MYSTERIES</button></li>
+                                <li><button onclick="window.location.href = 'mission.html';"><i
+                                            style="color: var(--accent-amber);"><svg xmlns="http://www.w3.org/2000/svg"
+                                                width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-rocket-icon lucide-rocket">
+                                                <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" />
+                                                <path
+                                                    d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09" />
+                                                <path
+                                                    d="M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2z" />
+                                                <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 .05 5 .05" />
+                                            </svg></i> HISTORIC MISSIONS</button></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h6>TELEMETRY LOGS</h6>
+                            <div class="div4 d-flex flex-column ">
+                                <div class="d-flex justify-content-between">
+                                    <p>ACTIVE PROBES</p>
+                                    <span style="color: var(--text-primary); ">1,402</span>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <p>SPECTRAL SCANS</p>
+                                    <span style="color: var(--text-primary); ">89.4 PB</span>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <p>GRID FREQUENCY</p>
+                                    <span style="color: var(--primary); ">1420.405 MHz</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="bootstrap/bootstrap-5.3.8-dist/js/bootstrap.js"></script>
+    </body>
+    
+    </html>
