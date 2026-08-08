@@ -94,7 +94,7 @@
 body{
     background-image: 
     linear-gradient(rgba(12, 19, 36, .75),
-        rgba(12, 19, 36, .65)),
+    rgba(12, 19, 36, .65)),
     url(images/starts-bg.jpg);
     background-size: cover;
     background-position: center;
@@ -103,18 +103,24 @@ body{
     color: var(--text-primary);
     overflow-x: hidden;
 }
+html,
+body {
+    height: 100% !important;
+    overflow-x: clip !important;
+}
 header{
     background-color: var(--bg-primary);
     backdrop-filter: blur(12px);
-    position: sticky;
+    position: sticky !important;
     top: 0;
-    z-index: 3;
+    z-index: 3000 !important;
 }
-.offcanvas{
+.offcanvas {
     color: var(--text-primary) !important;
     background-color: var(--bg-primary) !important;
     height: 100vh !important;
     border: var(--border-highlight) 1px solid !important;
+    overflow-y: auto;
 }
 .offcanvas-body{
     border: var(--border-highlight) 1px solid !important;
@@ -525,11 +531,14 @@ footer ul li button:hover{
 .hero-solar h1 span{
     color: var(--primary);
 }
+.hero-solar .tag{
+    font-size: small;
+}
 .s-list button{
     background-color: var(--bg-primary);
     border:1px solid var(--border-glass);
     border-radius:20px;
-    padding: 5px 20px;
+    padding: 5px;
     color:var(--text-muted);
 }
 .s-list button:hover{
