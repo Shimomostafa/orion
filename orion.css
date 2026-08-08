@@ -216,6 +216,7 @@ header{
     padding: 8px 10px;
     margin: 50px 0px 5px;
     color:var(--primary);
+    font-size: 11px !important;
 }
 .hero-layer h1{
     font-size: 2.5rem;
@@ -675,7 +676,9 @@ footer ul li button:hover{
         margin: 5px 5px !important;
     }
 
-
+.tag{
+    font-size: 15px !important;
+}
     .hero-layer h1 {
         font-size: 6rem;
         font-weight: 600;
