@@ -832,7 +832,7 @@ footer ul li button:hover{
     border: 1px solid white;
         border-radius: 30px;
         height: 40px;
-        font-size: 12px;
+        font-size: 10px;
         padding: 8px 10px;
         margin: 30px 0px;
 }
@@ -879,6 +879,9 @@ footer ul li button:hover{
 .galaxy:hover button{
     background-color: var(--primary);
     transition: 0.4s ease;
+}
+.galaxy .right .tag p{
+    font-size: 10px;
 }
 .mystery,
 .nebula{
@@ -1120,11 +1123,17 @@ footer ul li button:hover{
         font-size: 3rem;
         font-weight: 600;
     }
+        .galaxy .right .tag p {
+            font-size: 12px;
+        }
     .mission h2{
         font-size: 3rem;
         font-weight: 600;
     }
     .hero-gallery .tag p{
         font-size: 15px;
+    }
+    .g-tag{
+        font-size: 15px !important;
     }
 }
