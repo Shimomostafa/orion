@@ -10,7 +10,7 @@ function filterplanets(category, button) {
     for (var i = 0; i < planets.length; i++) {
         var planet = planets[i];
         if (category == 'all' || planet.classList.contains(category)) {
-            planet.style.display = 'block';
+            planet.style.setProperty('display', 'block', 'important');
         } else {
             planet.style.display = 'none';
         }
@@ -70,7 +70,7 @@ function showMission(number) {
 
 }
 
-function filterplanets(category, button) {
+function filtergallery(category, button) {
     var gallery = document.querySelectorAll('.image-g');
     var buttons = document.querySelectorAll('.filter-btn');
     for (var i = 0; i < buttons.length; i++) {
