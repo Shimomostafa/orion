@@ -55,15 +55,18 @@ function showMission(number) {
     if (mission) {
         mission.style.setProperty('display', 'flex', 'important');
     }
+    document.body.style.overflow = 'hidden';
+
     var missionDetails = document.querySelectorAll('.mission-details');
     for (var i = 0; i < missionDetails.length; i++) {
     missionDetails[i].addEventListener('click', function(e) {
         if (e.target === this) {
             this.style.display = 'none';
         }
+        document.body.style.overflow = 'auto';
     });
 }
-    document.body.style.overflow = 'hidden';
+
 
 }
 
