@@ -72,7 +72,7 @@ function showMission(number) {
 
 function filtergallery(category, button) {
     var gallery = document.querySelectorAll('.image-g');
-    var buttons = document.querySelectorAll('.filter-btn');
+    var buttons = document.querySelectorAll('.filter-btn-gallery');
     for (var i = 0; i < buttons.length; i++) {
         buttons[i].classList.remove('active');
     }
