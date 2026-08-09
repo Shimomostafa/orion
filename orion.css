@@ -91,11 +91,12 @@
     --transition-normal: .5s ease;
     --transition-slow: .8s ease;
 }
+
 body{
     background-image: 
     linear-gradient(rgba(12, 19, 36, .75),
     rgba(12, 19, 36, .65)),
-    url(images/starts-bg.jpg);
+    url(images/stars5.gif);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -665,36 +666,6 @@ footer ul li button:hover{
 }
 
 
-@media (min-width: 768px) {
-    .offcanvas-body .nav-btn {
-        width: 100% !important;
-        background-color: var(--bg-surface) !important;
-        border: none !important;
-        color: var(--text-primary) !important;
-        border-radius: var(--radius-lg) !important;
-        padding: 0px !important;
-        margin: 5px 5px !important;
-    }
-
-.tag{
-    font-size: 15px !important;
-}
-    .hero-layer h1 {
-        font-size: 6rem;
-        font-weight: 600;
-    }
-
-    .initiative p{
-        color: var(--text-muted) !important;
-        font-size: 1rem !important;
-        font-weight: 400 !important;
-    }
-    .hero-solar h1{
-        font-size: 4rem;
-        font-weight: 600;
-    }
-}
-
 /*                                           planet page                                */
 
 .hero-planet button{
@@ -846,4 +817,314 @@ footer ul li button:hover{
 .galary:hover img{
     transform: scale(1.03);
     transition: 0.4s ease;
+}
+
+/*                                   galaxies page                                   */
+.galaxy{
+    background-color: var(--bg-primary);
+    border-radius: var(--radius-xl);
+    border: var(--border-glass) 1px solid;
+    padding: 20px;
+    color: var(--text-primary);
+}
+.g-tag{
+    background-color: var(--bg-primary);
+    border: 1px solid white;
+        border-radius: 30px;
+        height: 40px;
+        font-size: 12px;
+        padding: 8px 10px;
+        margin: 30px 0px;
+}
+
+.hero-galaxy p{
+    color: var(--text-body);
+    margin: 20px 0px;
+}
+
+.galaxy .image {
+    border-radius: var(--radius-xl);
+    margin: 20px 0;
+    width: 100%;
+    position: relative;
+}
+.galaxy .image img{
+    border-radius: var(--radius-xl);
+    width: 100%;
+}
+.galaxy:hover img{
+    transform: scale(1.03);
+    transition: 0.4s ease;
+}
+.galaxy .image .G-tag{
+    position: absolute;
+    top: 10px;
+    left: 75%;
+    background-color: var(--bg-primary);
+    border: none;
+    border-radius: 30px;
+    height: 20px;
+    font-size: 12px;
+    color: var(--primary);
+    padding: 0px 10px;
+}
+.galaxy button{
+    background-color: var(--bg-primary);
+    border:none;
+    border-radius:20px;
+    padding: 10px 20px;
+    margin: 20px 0px;
+    font-weight: 600;
+}
+.galaxy:hover button{
+    background-color: var(--primary);
+    transition: 0.4s ease;
+}
+.mystery,
+.nebula{
+    background-color: var(--bg-primary);
+    border-radius: var(--radius-xl);
+    border: var(--border-glass) 1px solid;
+    padding: 20px;
+    color: var(--text-muted);
+    margin-top: 30px;
+}
+.mystery.image,
+.nebula .image{
+    border-radius: var(--radius-xl);
+    margin: 20px 0;
+    width: 100%;
+}
+.mystery .image img,
+.nebula .image img{
+    border-radius: var(--radius-xl);
+    width: 100%;
+}
+.mystery:hover img,
+.nebula:hover img{
+    transform: scale(1.03);
+    transition: 0.4s ease;
+}
+.mystery,
+.nebula h4{
+    color: var(--text-primary);
+}
+.nebula:hover h4{
+    color: var(--primary);
+    transition: 0.4s ease;
+}
+.mystery:hover{
+    box-shadow: var(--shadow-blue);
+    transition: 0.4s ease;
+}
+.mystery .div5{
+    background-color: var(--bg-subsurface);
+    border-radius: var(--radius-xl);
+    border: var(--border-glass) 1px solid;
+    padding: 3px 10px;
+    color: var(--text-muted);
+}
+
+/*                                                                   mission page                                                                          */
+
+.m-tag{
+    background-color: #fbbe242b;
+    border: 1px solid var(--accent-amber);
+        border-radius: 30px;
+        height: 40px;
+        padding: 8px 10px;
+        margin: 30px 0px;
+        color: var(--accent-amber);
+}
+
+.mission {
+    background-color: var(--bg-primary);
+    border-radius: var(--radius-xl);
+    border: var(--border-glass) 1px solid;
+    padding: 20px;
+    color: var(--text-primary);
+}
+.mission .right .tag{
+    background-color: #fbbe241c;
+    border: 1px solid var(--accent-amber);
+        border-radius: 10px;
+        height: 25px;
+        padding: 3px 10px;
+        color: var(--accent-amber);
+}
+.mission .tag p{
+    font-size: 10px;
+}
+
+.mission .image {
+    border-radius: var(--radius-xl);
+    margin: 30px 0;
+    width: 100%;
+    position: relative;
+}
+.mission .image img{
+    border-radius: var(--radius-xl);
+    width: 100%;
+}
+.mission:hover img{
+    transform: scale(1.03);
+    transition: 0.4s ease;
+}
+.mission .image .M-tag{
+    position: absolute;
+    top: 10px;
+    left: 5%;
+    background-color: var(--accent-amber);
+    border: none;
+    border-radius: 30px;
+    height: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    color: black;
+    padding: 0px 10px;
+}
+.mission button{
+    background-color: var(--bg-primary);
+    border:none;
+    border-radius:20px;
+    padding: 10px 20px;
+    margin: 0px ;
+    font-weight: 600;
+}
+.mission:hover button{
+    background-color: var(--accent-amber);
+    transition: 0.4s ease;
+}
+.mission:hover h2{
+    color: var(--accent-amber);
+    transition: 0.4s ease;
+}
+#mission-details-5,
+#mission-details-4,
+#mission-details-3,
+#mission-details-2,
+#mission-details-1 {
+    display: none !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    inset: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 200;
+    overflow-y: auto;
+    padding: 30px;
+}
+
+/*                                                                    gallery page                                                                          */
+
+
+.gallery .image-g{
+    position: relative;
+    background-color: var(--bg-primary);
+    border-radius: var(--radius-xl);
+    border: var(--border-glass) 1px solid;
+    padding: 20px;
+    margin-top: 30px;
+
+}
+.gallery .image-g img{
+    border-radius: var(--radius-xl);
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.gallery .image-g .g-tag{
+    position: absolute;
+    top: 10px;
+    left: 5%;
+    background-color: black;
+    border: none;
+    border-radius: 30px;
+    height: 20px;
+    font-size: 10px;
+    color: var(--primary);
+    padding: 0px 10px;
+}
+.gallery .image-g:hover{
+    box-shadow: var(--shadow-cyan);
+    transition: 0.4s ease;
+}
+.gallery .image-g:hover img{
+    transform: scale(1.03);
+    transition: 0.4s ease;
+}
+.hero-gallery h1 span {
+    color: var(--primary);
+}
+.hero-gallery .tag p {
+    font-size: 10px;
+}
+
+.g-list button {
+    background-color: var(--bg-primary);
+    border: 1px solid var(--border-glass);
+    border-radius: 20px;
+    padding: 5px;
+    color: var(--text-muted);
+}
+
+.g-list button:hover {
+    color: var(--text-primary);
+    background-color: var(--bg-subsurface) !important;
+    transition: 0.4s ease;
+}
+
+.g-list button.active:hover {
+    background-color: var(--secondary) !important;
+    color: var(--text-primary) !important;
+}
+
+
+@media (min-width: 768px) {
+    .offcanvas-body .nav-btn {
+        width: 100% !important;
+        background-color: var(--bg-surface) !important;
+        border: none !important;
+        color: var(--text-primary) !important;
+        border-radius: var(--radius-lg) !important;
+        padding: 0px !important;
+        margin: 5px 5px !important;
+    }
+
+    .tag {
+        font-size: 15px !important;
+    }
+
+    .hero-layer h1 {
+        font-size: 6rem;
+        font-weight: 600;
+    }
+
+    .initiative p {
+        color: var(--text-muted) !important;
+        font-size: 1rem !important;
+        font-weight: 400 !important;
+    }
+
+    .hero-solar h1 {
+        font-size: 4rem;
+        font-weight: 600;
+    }
+    .hero-galaxy h1{
+        font-size: 4rem;
+        font-weight: 600;
+    }
+    .galaxy h2{
+        font-size: 3rem;
+        font-weight: 600;
+    }
+    .mission h2{
+        font-size: 3rem;
+        font-weight: 600;
+    }
+    .hero-gallery .tag p{
+        font-size: 15px;
+    }
 }

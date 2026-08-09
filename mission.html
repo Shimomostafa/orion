@@ -1,0 +1,695 @@
+<!doctype html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ORION</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="bootstrap/bootstrap-5.3.8-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="orion.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar  navbar-expand-lg ">
+                <div class="container">
+                    <button class="navbar-brand col-3 d-flex align-items-center "
+                        onclick="window.location.href='index.html'">
+                        <div class="d-flex col-4 gap-1">
+                            <div><img src="images/orion-logo.jpg" alt=""
+                                    style=" width:40px; height: 50px; border-radius: 45%;"></div>
+                            <div class="d-flex align-items-center">
+                                <h4>ORION</h4>
+                            </div>
+                        </div>
+                    </button>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"> ORION</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body d-flex flex-column flex-md-row justify-content-between">
+                            <ul
+                                class="navbar-nav justify-content-md-center align-items-md-center flex-grow-1 pe-3 gap-3">
+                                <li class="nav-item">
+                                    <button class="d-flex align-items-center gap-3 nav-btn " aria-current="page"
+                                        onclick="window.location.href = 'index.html';">
+                                        <div class="btn-icon"><i><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-radio-icon lucide-radio">
+                                                    <path d="M16.247 7.761a6 6 0 0 1 0 8.478" />
+                                                    <path d="M19.075 4.933a10 10 0 0 1 0 14.134" />
+                                                    <path d="M4.925 19.067a10 10 0 0 1 0-14.134" />
+                                                    <path d="M7.753 16.239a6 6 0 0 1 0-8.478" />
+                                                    <circle cx="12" cy="12" r="2" />
+                                                </svg></i></div>
+                                        EXPLORE
+                                    </button>
+                                </li>
+                                <li class="nav-item">
+                                    <button class="d-flex align-items-center gap-3 nav-btn "
+                                        onclick="window.location.href = 'solar-system.html';">
+                                        <div class="btn-icon"> <i><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-globe-icon lucide-globe">
+                                                    <circle cx="12" cy="12" r="10" />
+                                                    <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+                                                    <path d="M2 12h20" />
+                                                </svg></i></div>
+                                        SOLAR SYSTEM
+                                    </button>
+                                </li>
+                                <li class=" nav-item">
+                                    <button class=" d-flex align-items-center gap-3 nav-btn "
+                                        onclick="window.location.href = 'galaxy.html';">
+                                        <div class="btn-icon"><i><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-orbit-icon lucide-orbit">
+                                                    <path d="M20.341 6.484A10 10 0 0 1 10.266 21.85" />
+                                                    <path d="M3.659 17.516A10 10 0 0 1 13.74 2.152" />
+                                                    <circle cx="12" cy="12" r="3" />
+                                                    <circle cx="19" cy="5" r="2" />
+                                                    <circle cx="5" cy="19" r="2" />
+                                                </svg></i></div>
+                                        GLAXIES
+                                    </button>
+                                </li>
+                                <li class=" nav-item">
+                                    <button class="d-flex align-items-center gap-3 nav-btn "
+                                        onclick="window.location.href = 'mystery.html';">
+                                        <div class="btn-icon"><i><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-sparkles-icon lucide-sparkles">
+                                                    <path
+                                                        d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z" />
+                                                    <path d="M20 2v4" />
+                                                    <path d="M22 4h-4" />
+                                                    <circle cx="4" cy="20" r="2" />
+                                                </svg></i></div>
+                                        MYSTRIES
+                                    </button>
+                                </li>
+                                <li class=" nav-item">
+                                    <button class="d-flex align-items-center gap-3 nav-btn active"
+                                        onclick="window.location.href = 'mission.html';">
+                                        <div class="btn-icon"><i><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-rocket-icon lucide-rocket">
+                                                    <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" />
+                                                    <path
+                                                        d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09" />
+                                                    <path
+                                                        d="M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2z" />
+                                                    <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 .05 5 .05" />
+                                                </svg></i></div>
+                                        MISSIONS
+                                    </button>
+                                </li>
+                                <li class=" nav-item">
+                                    <button class="d-flex align-items-center gap-3  nav-btn "
+                                        onclick="window.location.href = 'gallery.html';">
+                                        <div class="btn-icon"><i><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-image-icon lucide-image">
+                                                    <rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
+                                                    <circle cx="9" cy="9" r="2" />
+                                                    <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" />
+                                                </svg></i></div>
+                                        GALLERY
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="hero-mission">
+            <div class="container">
+                <div class="row">
+                    <div class="hero-galaxy d-flex flex-column justify-content-center align-items-center text-center">
+                        <div class="m-tag d-flex align-items-center gap-2"><i><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rocket-icon lucide-rocket">
+                            <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" />
+                            <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09" />
+                            <path d="M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2z" />
+                            <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 .05 5 .05" />
+                        </svg> </i> SPACEFLIGHT ARCHIVES // CHRONICLES OF ASCENSION</div>
+                        <h1>HISTORIC <span style="color: var(--accent-amber);">MISSIONS</span></h1>
+                        <p class="col-md-6">From humanity's first steps on the Moon to interstellar probes crossing the heliopause. Explore key milestones in cosmic
+                        exploration.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="missions" style="margin-top:50px ;">
+            <div class="container">
+                <div class="row">
+                    <a class="mission-card" onclick="showMission(1)" style="text-decoration: none;">
+                        <div class="mission d-md-flex gap-5">
+                            <div class="left col-md-4">
+                                <div class="image"><img src="images/img28.jpg" alt="">
+                                    <div class="M-tag ">
+                                        <p>1969</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right col-md-7 text-start">
+                                <div class="d-flex gap-2">
+                                    <div class="tag d-flex justify-content-center">
+                                        <p> LUNAR_ORBIT</p>
+                                    </div>
+                                    <div class="tag d-flex justify-content-center">
+                                        <p> SUCCESS</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h2>APOLLO 11</h2>
+                                </div>
+                                <div class="m-para col-md-11">
+                                    <p>The first human mission to land on the lunar surface. Commander Neil Armstrong and lunar module pilot Buzz Aldrin landed
+                                    the Apollo Lunar Module Eagle on July 20, 1969.
+                                    </p>
+                                </div>
+                                <div >
+                                    <button class="w-100">VIEW MISSION UPLINK DATA <i><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-arrow-right-icon lucide-arrow-right">
+                                                <path d="M5 12h14" />
+                                                <path d="m12 5 7 7-7 7" />
+                                            </svg></i></button>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                </a>
+            </div>
+            </div>
+        </section>
+        <section class="missions" style="margin-top:50px ;">
+            <div class="container">
+                <div class="row">
+                    <a class="mission-card" onclick="showMission(2)" style="text-decoration: none;">
+                        <div class="mission d-md-flex gap-5">
+                            <div class="left col-md-4">
+                                <div class="image"><img src="images/img29.jpg" alt="">
+                                    <div class="M-tag ">
+                                        <p>1977</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right col-md-7 text-start">
+                                <div class="d-flex gap-2">
+                                    <div class="tag d-flex justify-content-center">
+                                        <p> OUTER_RIM</p>
+                                    </div>
+                                    <div class="tag d-flex justify-content-center">
+                                        <p> ACTIVE_SIGNAL</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h2>VOYAGER INTERSTELLAR</h2>
+                                </div>
+                                <div class="m-para col-md-11">
+                                    <p>Voyager 1 became the first human-made object to cross the heliopause and enter interstellar space, carrying the Golden
+                                    Record as a message to the cosmos
+                                    </p>
+                                </div>
+                                <div class="col-md-7">
+                                    <button class="w-100">VIEW MISSION UPLINK DATA <i><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-arrow-right-icon lucide-arrow-right">
+                                                <path d="M5 12h14" />
+                                                <path d="m12 5 7 7-7 7" />
+                                            </svg></i></button>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                </a>
+            </div>
+            </div>
+        </section>
+        <section class="missions"  style="margin-top:50px ;">
+            <div class="container">
+                <div class="row">
+                    <a class="mission-card"onclick=" showMission(3)" style="text-decoration: none;">
+                        <div class="mission d-md-flex gap-5">
+                            <div class="left col-md-4">
+                                <div class="image"><img src="images/img30.jpg" alt="">
+                                    <div class="M-tag ">
+                                        <p>1990</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right col-md-7 text-start">
+                                <div class="d-flex gap-2">
+                                    <div class="tag d-flex justify-content-center">
+                                        <p>  OPTICAL_RELAY</p>
+                                    </div>
+                                    <div class="tag d-flex justify-content-center">
+                                        <p> LEGACY</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h2>HUBBLE TELESCOPE</h2>
+                                </div>
+                                <div class="m-para col-md-11">
+                                    <p>Launched into low Earth orbit, Hubble revolutionized astronomy by providing the clearest views of distant galaxies,
+                                    nebulae, and planetary systems ever captured.</p>
+                                </div>
+                                <div class="col-md-7">
+                                    <button class="w-100">VIEW MISSION UPLINK DATA <i><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-arrow-right-icon lucide-arrow-right">
+                                                <path d="M5 12h14" />
+                                                <path d="m12 5 7 7-7 7" />
+                                            </svg></i></button>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                </a>
+            </div>
+            </div>
+        </section>
+        <section class="missions" style="margin-top:50px ;">
+            <div class="container">
+                <div class="row">
+                    <a class="mission-card" onclick="showMission(4)" style="text-decoration: none;">
+                        <div class="mission d-md-flex gap-5">
+                            <div class="left col-md-4">
+                                <div class="image"><img src="images/img31.jpg" alt="">
+                                    <div class="M-tag ">
+                                        <p>2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right col-md-7 text-start">
+                                <div class="d-flex gap-2">
+                                    <div class="tag d-flex justify-content-center">
+                                        <p>  L2_STATION</p>
+                                    </div>
+                                    <div class="tag d-flex justify-content-center">
+                                        <p> INFRARED_SCAN</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h2>JWST INFRARED</h2>
+                                </div>
+                                <div class="m-para col-md-11">
+                                    <p>Unpeeling the layers of the early universe, Webb observes in infrared to see through dust clouds and witness the first
+                                    light of star formation.</p>
+                                </div>
+                                <div class="col-md-7">
+                                    <button class="w-100">VIEW MISSION UPLINK DATA <i><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-arrow-right-icon lucide-arrow-right">
+                                                <path d="M5 12h14" />
+                                                <path d="m12 5 7 7-7 7" />
+                                            </svg></i></button>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                </a>
+            </div>
+            </div>
+        </section>
+        <section class="missions" style="margin-top:50px ;">
+            <div class="container">
+                <div class="row">
+                    <a class="mission-card" onclick="showMission(5)" style="text-decoration: none;">
+                        <div class="mission d-md-flex gap-5">
+                            <div class="left col-md-4">
+                                <div class="image"><img src="images/img32.jpg" alt="">
+                                    <div class="M-tag ">
+                                        <p>2030+</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right col-md-7 text-start">
+                                <div class="d-flex gap-2">
+                                    <div class="tag d-flex justify-content-center">
+                                        <p>PROJECTED</p>
+                                    </div>
+                                    <div class="tag d-flex justify-content-center">
+                                        <p>MULTI_PLANET</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h2>PROJECT ARTEMIS & MARS</h2>
+                                </div>
+                                <div class="m-para col-md-11">
+                                    <p>The next frontier: Establishing a permanent lunar presence with Gateway and launching the first crewed missions to the
+                                    Red Planet.</p>
+                                </div>
+                                <div class="col-md-7">
+                                    <button class="w-100">VIEW MISSION UPLINK DATA <i><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-arrow-right-icon lucide-arrow-right">
+                                                <path d="M5 12h14" />
+                                                <path d="m12 5 7 7-7 7" />
+                                            </svg></i></button>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                </a>
+            </div>
+            </div>
+        </section>
+        <section id="mission-details-1" class="mission-details missions d-flex justify-content-center align-items-center" style="margin-top:50px ;">
+            <div class="container">
+                <div class="row">
+                    <div class=" col-12 d-flex  justify-content-center align-items-center">
+                        <a href="" style="text-decoration: none;" class="d-flex flex-column align-items-center justify-content-center">
+                            <div class="mission col-md-6 d-md-flex flex-column justify-content-center align-items-center ">
+                                <div class="left ">
+                                    <div class="image"><img src="images/img28.jpg" alt="">
+                                        <div class="M-tag ">
+                                            <p>1969</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="right text-start">
+                                    <div class="d-flex gap-2">
+                                        <span style="color: var(--accent-amber);">LAUNCH YEAR: 1969</span>
+                                    </div>
+                                    <div>
+                                        <h2>APOLLO 11</h2>
+                                    </div>
+                                    <div class="m-para col-md-11">
+                                        <p>The first human mission to land on the lunar surface. Commander Neil Armstrong and lunar module pilot
+                                            Buzz Aldrin landed
+                                            the Apollo Lunar Module Eagle on July 20, 1969.
+                                        </p>
+                                    </div>
+                                    <div >
+                                        <div class=" d-flex gap-3  justify-content-between align-items-center">
+                                            <h5>STATUS:</h5>
+                                            <span style="color: var(--accent-green);">TELEMETRY VERIFIED</span>
+                                        </div>
+                                        <div class=" d-flex gap-3  justify-content-between align-items-center">
+                                            <h5>ORBITAL SECTOR:</h5>
+                                            <span style="color: var(--text-primary);">SOL_SYSTEM // ARCHIVE_01</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        </div>
+                    </div>
+            </div>
+            </div>
+        </section>
+        <section id="mission-details-2" class="mission-details missions d-flex justify-content-center align-items-center" style="margin-top:50px ;">
+            <div class="container">
+                <div class="row">
+                    <div class=" col-12 d-flex  justify-content-center align-items-center">
+                        <a href="" style="text-decoration: none;" class="d-flex flex-column align-items-center justify-content-center">
+                            <div class="mission col-md-6 d-md-flex flex-column justify-content-center align-items-center ">
+                                <div class="left ">
+                                    <div class="image"><img src="images/img29.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="right text-start">
+                                    <div class="d-flex gap-2">
+                                        <span style="color: var(--accent-amber);">LAUNCH YEAR: 1977</span>
+                                    </div>
+                                    <div>
+                                        <h2>VOYAGER INTERSTELLAR</h2>
+                                    </div>
+                                    <div class="m-para col-md-11">
+                                        <p>Voyager 1 became the first human-made object to cross the heliopause and enter interstellar space, carrying the Golden
+                                        Record as a message to the cosmos.</p>
+                                    </div>
+                                    <div >
+                                        <div class=" d-flex gap-3  justify-content-between align-items-center">
+                                            <h5>STATUS:</h5>
+                                            <span style="color: var(--accent-green);">TELEMETRY VERIFIED</span>
+                                        </div>
+                                        <div class=" d-flex gap-3  justify-content-between align-items-center">
+                                            <h5>ORBITAL SECTOR:</h5>
+                                            <span style="color: var(--text-primary);">SOL_SYSTEM // ARCHIVE_02</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        </div>
+                    </div>
+            </div>
+            </div>
+        </section>
+        <section id="mission-details-3" class="mission-details missions d-flex justify-content-center align-items-center" style="margin-top:50px ;">
+            <div class="container">
+                <div class="row">
+                    <div class=" col-12 d-flex  justify-content-center align-items-center">
+                        <a href="" style="text-decoration: none;" class="d-flex flex-column align-items-center justify-content-center">
+                            <div class="mission col-md-6 d-md-flex flex-column justify-content-center align-items-center ">
+                                <div class="left ">
+                                    <div class="image"><img src="images/img30.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="right text-start">
+                                    <span style="color: var(--accent-amber);">LAUNCH YEAR: 1990</span>
+                                    <div>
+                                        <h2>HUBBLE TELESCOPE</h2>
+                                    </div>
+                                    <div class="m-para col-md-11">
+                                        <p>Launched into low Earth orbit, Hubble revolutionized astronomy by providing the clearest views of distant galaxies,
+                                        nebulae, and planetary systems ever captured.</p>
+                                    </div>
+                                    <div>
+                                        <div class=" d-flex gap-3  justify-content-between align-items-center">
+                                            <h5>STATUS:</h5>
+                                            <span style="color: var(--accent-green);">TELEMETRY VERIFIED</span>
+                                        </div>
+                                        <div class=" d-flex gap-3  justify-content-between align-items-center">
+                                            <h5>ORBITAL SECTOR:</h5>
+                                            <span style="color: var(--text-primary);">SOL_SYSTEM // ARCHIVE_03</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        </div>
+                    </div>
+            </div>
+            </div>
+        </section>
+        <section id="mission-details-4" class="mission-details missions d-flex justify-content-center align-items-center" style="margin-top:50px ;">
+            <div class="container">
+                <div class="row">
+                    <div class=" col-12 d-flex  justify-content-center align-items-center">
+                        <a href="" style="text-decoration: none;" class="d-flex flex-column align-items-center justify-content-center">
+                            <div class="mission col-md-6 d-md-flex flex-column justify-content-center align-items-center ">
+                                <div class="left ">
+                                    <div class="image"><img src="images/img31.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="right text-start">
+                                    <span style="color: var(--accent-amber);">LAUNCH YEAR: 2021</span>
+                                    <div>
+                                        <h2>JWST INFRARED</h2>
+                                    </div>
+                                    <div class="m-para col-md-11">
+                                        <p>Unpeeling the layers of the early universe, Webb observes in infrared to see through dust clouds and witness the first
+                                        light of star formation.</p>
+                                    </div>
+                                    <div >
+                                        <div class=" d-flex gap-3  justify-content-between align-items-center">
+                                            <h5>STATUS:</h5>
+                                            <span style="color: var(--accent-green);">TELEMETRY VERIFIED</span>
+                                        </div>
+                                        <div class=" d-flex gap-3  justify-content-between align-items-center">
+                                            <h5>ORBITAL SECTOR:</h5>
+                                            <span style="color: var(--text-primary);">SOL_SYSTEM // ARCHIVE_04</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        </div>
+                    </div>
+            </div>
+            </div>
+        </section>
+        <section id="mission-details-5" class="mission-details missions d-flex justify-content-center align-items-center" style="margin-top:50px ;">
+            <div class="container">
+                <div class="row">
+                    <div class=" col-12 d-flex  justify-content-center align-items-center">
+                        <a href="" style="text-decoration: none;" class="d-flex flex-column align-items-center justify-content-center">
+                            <div class="mission col-md-6 d-md-flex flex-column justify-content-center align-items-center ">
+                                <div class="left ">
+                                    <div class="image"><img src="images/img32.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="right text-start">
+                                    <span style="color: var(--accent-amber);">LAUNCH YEAR: 2030+</span>
+                                    <div>
+                                        <h2>PROJECT ARTEMIS & MARS</h2>
+                                    </div>
+                                    <div class="m-para col-md-11">
+                                        <p>The next frontier: Establishing a permanent lunar presence with Gateway and launching the first crewed missions to the
+                                        Red Planet.</p>
+                                    </div>
+                                    <div >
+                                        <div class=" d-flex gap-3  justify-content-between align-items-center">
+                                            <h5>STATUS:</h5>
+                                            <span style="color: var(--accent-green);">TELEMETRY VERIFIED</span>
+                                        </div>
+                                        <div class=" d-flex gap-3  justify-content-between align-items-center">
+                                            <h5>ORBITAL SECTOR:</h5>
+                                            <span style="color: var(--text-primary);">SOL_SYSTEM // ARCHIVE_05</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        </div>
+                    </div>
+            </div>
+            </div>
+        </section>
+        <footer style="margin-top: 30px;">
+            <div class="container">
+                <div class="row">
+                    <div class="d-md-flex">
+                        <div class="col-md-4">
+                            <button onclick="window.location.href = 'index.html';">
+                                <div class="d-flex align-items-center gap-2">
+                                    <div class="image"><img src="images/orion-logo.jpg" alt=""></div>
+                                    <div class="d-flex flex-column align-items-center justify-content-start text-start">
+                                        <h4>ORION <span>AEROSPACE OBSERVATORY</span></h4>
+                                    </div>
+                                </div>
+                            </button>
+                            <div class="f-para  col-md-10">
+                                <p>Charting deep space telemetry, planetary cartography, and cosmic mysteries for
+                                    next-generation astronomical observation.</p>
+                            </div>
+                            <div class="f-tag col-10 col-md-8">
+                                <p><i><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" class="lucide lucide-radio-icon lucide-radio">
+                                            <path d="M16.247 7.761a6 6 0 0 1 0 8.478" />
+                                            <path d="M19.075 4.933a10 10 0 0 1 0 14.134" />
+                                            <path d="M4.925 19.067a10 10 0 0 1 0-14.134" />
+                                            <path d="M7.753 16.239a6 6 0 0 1 0-8.478" />
+                                            <circle cx="12" cy="12" r="2" />
+                                        </svg></i> ORBITAL UPLINK: STABLE</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-md-flex flex-column align-items-center justify-content-start">
+                            <ul class="f-list list-unstyled">
+                                <h6>sectors</h6>
+                                <li><button onclick="window.location.href = 'solar-system.html';"><i
+                                            style="color: var(--secondary);"><svg xmlns="http://www.w3.org/2000/svg"
+                                                width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" class="lucide lucide-globe-icon lucide-globe">
+                                                <circle cx="12" cy="12" r="10" />
+                                                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+                                                <path d="M2 12h20" />
+                                            </svg></i> SOLAR SYSTEM</button></li>
+                                <li><button onclick="window.location.href = 'galaxy.html';"><i
+                                            style="color: var(--primary);"><svg xmlns="http://www.w3.org/2000/svg"
+                                                width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                class="lucide lucide-sparkles-icon lucide-sparkles">
+                                                <path
+                                                    d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z" />
+                                                <path d="M20 2v4" />
+                                                <path d="M22 4h-4" />
+                                                <circle cx="4" cy="20" r="2" />
+                                            </svg></i> GALAXIES & NEBULAE</button></li>
+                                <li><button onclick="window.location.href = 'mystery.html';"><i
+                                            style="color: var(--accent-purple);"><svg xmlns="http://www.w3.org/2000/svg"
+                                                width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" class="lucide lucide-radio-icon lucide-radio">
+                                                <path d="M16.247 7.761a6 6 0 0 1 0 8.478" />
+                                                <path d="M19.075 4.933a10 10 0 0 1 0 14.134" />
+                                                <path d="M4.925 19.067a10 10 0 0 1 0-14.134" />
+                                                <path d="M7.753 16.239a6 6 0 0 1 0-8.478" />
+                                                <circle cx="12" cy="12" r="2" />
+                                            </svg></i> DEEP SPACE MYSTERIES</button></li>
+                                <li><button onclick="window.location.href = 'mission.html';"><i
+                                            style="color: var(--accent-amber);"><svg xmlns="http://www.w3.org/2000/svg"
+                                                width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" class="lucide lucide-rocket-icon lucide-rocket">
+                                                <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" />
+                                                <path
+                                                    d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09" />
+                                                <path
+                                                    d="M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2z" />
+                                                <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 .05 5 .05" />
+                                            </svg></i> HISTORIC MISSIONS</button></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h6>TELEMETRY LOGS</h6>
+                            <div class="div4 d-flex flex-column ">
+                                <div class="d-flex justify-content-between">
+                                    <p>ACTIVE PROBES</p>
+                                    <span style="color: var(--text-primary); ">1,402</span>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <p>SPECTRAL SCANS</p>
+                                    <span style="color: var(--text-primary); ">89.4 PB</span>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <p>GRID FREQUENCY</p>
+                                    <span style="color: var(--primary); ">1420.405 MHz</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="bootstrap/bootstrap-5.3.8-dist/js/bootstrap.js"></script>
+</body>
+
+</html>
