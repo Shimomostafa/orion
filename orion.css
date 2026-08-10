@@ -796,7 +796,9 @@ footer ul li button:hover{
     color: var(--primary);
     transition: 0.4s ease;
 }
-
+#SATELLITEGALLERY{
+    display: none;
+}
 .galary{
     background-color: var(--bg-primary);
     border-radius: var(--radius-xl);
