@@ -133,8 +133,9 @@ header{
     border:1px solid var(--border-highlight) !important;
     color: var(--text-primary) !important;
     border-radius: var(--radius-lg) !important;
-    padding: 10px !important;
+    padding: 5px !important;
     margin: 5px 5px !important;
+    font-size: 12px !important;
 }
 .offcanvas-body .nav-btn.active{
     background-color: var(--secondary) !important;
