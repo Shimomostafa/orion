@@ -1140,3 +1140,15 @@ footer ul li button:hover{
         font-size: 15px !important;
     }
 }
+
+@media (min-width: 1024px) {
+    .offcanvas-body .nav-btn {
+        width: 100% !important;
+        background-color: var(--bg-surface) !important;
+        border: none !important;
+        color: var(--text-primary) !important;
+        border-radius: var(--radius-lg) !important;
+        padding: 0 5px !important;
+        margin: 5px 0px !important;
+    }
+}
